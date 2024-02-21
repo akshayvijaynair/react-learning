@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello React</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      class MyApp extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            txt: '',
+          };
+        }
+        render() {
+          return (
+            <div>
+              <div className="top">
+                <input type="text" id="inputFld" onChange={(e) => this.setState({ txt: e.target.value })} />
+              </div>
+              <div className="bottom">
+                <span className="output">{this.state.txt.split('').reverse().join('')}</span>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      // ReactDOM.render(<MyApp />, document.getElementById("app"));
+      // Updated to use React v18.x
+      const appContainer = document.getElementById('app');
+      const root = ReactDOM.createRoot(appContainer);
+      root.render(<MyApp />);
+    </script>
+  </body>
+</html>
