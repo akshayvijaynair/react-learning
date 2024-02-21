@@ -48,7 +48,7 @@ JSX is similar to a templating syntax for React applications. This makes it easy
 JSX is similar to a templating language, which means it lets you describe visual elements in an HTML-like syntax but, internally, it transforms the syntax into code that React uses. JSX is designed to produce React elements. So, when you write JSX, it is compiled into standard JavaScript functions containing nested invocations of the createElement function, which is used by React to create renderable elements internally.  
 
 ## Concept 3: State
-The state is an instance of the React component class, which can be defined as an object that governs how a component renders and behaves. Simply put, the state of a component allows it to be dynamic and interactive, controlling its behaviour.
+**The state is an instance of the React component class**, which can be defined as an object that governs how a component renders and behaves. Simply put, the state of a component allows it to be dynamic and interactive, controlling its behaviour.
 
 In React, a state describes the contents of an interface. Whenever the state is changed, the interface automatically updates to reflect the change made. The interface can be declaratively updated by updating the underlying state. All other tasks are managed seamlessly by React.
 
@@ -76,7 +76,7 @@ a state is used when a component has to store and process dynamic data, and it i
 
 A typical React application is made up of several components, and although multiple techniques are available to share data between components, the most fundamental way is using props. 
 
-Props offer a simple way for parent components to pass data to child components. In terms of usage, they are similar to the standard attributes on a component and can be bound to dynamic data using a pair of curly braces. Props are immutable, that is, the data of a prop cannot be changed. 
+**Props offer a simple way for parent components to pass data to child components.** In terms of usage, they are similar to the standard attributes on a component and can be bound to dynamic data using a pair of curly braces. Props are immutable, that is, the data of a prop cannot be changed. 
 
 This is because the concept on which props have been built is that of pure functions, and any changes made to the data of the parameters cannot be changed in a Prop.
 
@@ -98,3 +98,12 @@ This is because the concept on which props have been built is that of pure funct
 - Using the proptypes package is extremely simple, and you can extend its capabilities by writing your validators.
 
  :alert: these four concepts cover the primary ideas behind React and the UI building with the React library
+ 
+## Life cycle of a React component
+
+- **Mounting phase:** This occurs when a React component instance is created and inserted into the DOM.
+- **Updating phase:** This phase occurs when we interact with the component and it re-renders. This interaction includes receiving updated data through props or an update to the state.
+- **Unmounting phase:** This is the final phase of the component lifecycle, which involves unmounting a component from the DOM.
+
+- Lifecycle functions
+![React Component Lifecycle.png](documentation-assets/React component lifecycle.png)
