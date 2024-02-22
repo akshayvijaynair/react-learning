@@ -105,5 +105,5 @@ This is because the concept on which props have been built is that of pure funct
 - **Updating phase:** This phase occurs when we interact with the component and it re-renders. This interaction includes receiving updated data through props or an update to the state.
 - **Unmounting phase:** This is the final phase of the component lifecycle, which involves unmounting a component from the DOM.
 
-- Lifecycle functions
+### Lifecycle functions
 ![React Component Lifecycle.png](documentation-assets/React component lifecycle.png)
