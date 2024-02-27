@@ -19,7 +19,7 @@ Today, React is used by Airbnb, American Express, Amazon Video, Docker, Expedia,
 - Observe JSX, Use of Babel alongside React
 - Observe injection of React as a JS script with DOM interactivity
 
-[Create react from starter project](./React from starter.md)
+[Create react from starter project](React%20from%20starter.md)
 
 ## Concept 1: Components
 
@@ -106,4 +106,4 @@ This is because the concept on which props have been built is that of pure funct
 - **Unmounting phase:** This is the final phase of the component lifecycle, which involves unmounting a component from the DOM.
 
 ### Lifecycle functions
-![React Component Lifecycle.png](documentation-assets/React component lifecycle.png)
+![React Component Lifecycle.png](documentation-assets/React%20component%20lifecycle.png)
